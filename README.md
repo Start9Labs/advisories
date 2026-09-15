@@ -14,7 +14,7 @@ The title is the single `#` heading and is what Dux sees in a search result, so 
 
 ## How Dux uses it
 
-Every couple of minutes the support server syncs `advisories/` from `master` into Postgres: number, title, full text, the file's first-commit date, its sources. A customer message is matched against that text with Postgres full-text search — title weighted highest, then Symptom and Affects, then the rest — and ranked by the match, by how often past support threads turned out to be about the advisory, and with a lift for advisories filed in the last thirty days. Dux is handed the top few titles. It must read an advisory in full before saying a word of it, and the server discards a reply that cites one it did not read.
+Every couple of minutes the support server syncs `advisories/` from `master` into Postgres: number, title, full text, the file's first-commit date, its sources. A customer message is matched against that text with Postgres full-text search — title weighted highest, then Symptom and Affects, then the rest — and ranked by the match, by how often past support threads turned out to be about the advisory, and with a lift for advisories filed in the last thirty days. Dux is handed the top few titles. It must read an advisory in full before saying a word of it, and the server discards a reply that cites one it did not read. An advisory says what the fix is; how to reach it on StartOS — SSH, `start-cli`, the UI — is documentation, and Dux takes those steps from there when it answers, so nothing here goes stale with a StartOS release.
 
 No model performs the search. Haiku and Sonnet draft advisories, humans merge them, Postgres finds them, Dux verifies and answers.
 

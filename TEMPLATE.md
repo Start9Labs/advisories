@@ -14,7 +14,7 @@
 
 ## Remedy
 
-<What to tell them, in the order to say it. The version to update to, if a fix has shipped.>
+<What to tell them, in the order to say it: the fix — the version to update to, the setting to change, the data to repair — and not the way to reach it on StartOS. SSH, start-cli and the UI are documented, and Dux takes those steps from the documentation when it answers, so they never go stale here.>
 
 ## Do not
 
@@ -22,7 +22,7 @@
 
 ## Notes
 
-<Scope, edge cases, how to tell it from a look-alike. Delete this section if there are none.>
+<Scope, edge cases, how to tell it from a look-alike, anything applying the fix needs that nothing documents. Delete this section if there are none.>
 
 ## Sources
 
