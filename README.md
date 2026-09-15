@@ -10,7 +10,7 @@ Issues in this repository are discussion. Only a file is an advisory, and nothin
 
 `advisories/<n>.md`, where `<n>` is the next unused integer. Never renamed, never reused: the number is the advisory's identity, and retiring one file and adding another is how an advisory changes identity. [`TEMPLATE.md`](TEMPLATE.md) is the file to copy; it names each section and says what goes in it.
 
-The title is the single `#` heading and is what Dux sees in a search result, so it has to be recognisable from a customer's own words. Symptom, Affects and Remedy are required; an empty optional section is deleted, not left blank. No other headings, no front matter, under 8 KB. `npm run check` enforces every rule, and CI runs it on each pull request, so `master` only ever holds valid advisories.
+The title is the single `#` heading and is what Dux sees in a search result, so it names the service or product the situation is in — StartOS alone goes unnamed — and is recognisable from a customer's own words. Symptom, Affects and Remedy are required; an empty optional section is deleted, not left blank. No other headings, no front matter, under 8 KB. `npm run check` enforces every rule, and CI runs it on each pull request, so `master` only ever holds valid advisories.
 
 ## How Dux uses it
 
