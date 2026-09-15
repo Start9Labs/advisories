@@ -1,4 +1,4 @@
-# <What the user sees, concretely — and what to do, if it fits on the line>
+# <The service or product, then what the user sees, concretely — and what to do, if it fits on the line>
 
 ## Symptom
 
