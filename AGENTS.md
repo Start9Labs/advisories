@@ -14,7 +14,7 @@
 2. Copy [`TEMPLATE.md`](TEMPLATE.md) to `advisories/<n>.md` and fill it in; each placeholder says what its section is for. Delete an optional section rather than leaving it empty or writing "none".
 3. Run `npm run check`. CI runs the same check on the PR and fails it on any deviation: wrong path or number, a missing or misordered section, an extra heading, front matter, placeholder text left in, more than 8 KB.
 
-**Drafting from an upstream issue.** The issue is a source, not an authority. Write what a Start9 staffer would tell a customer, not what the reporter claimed; put the URL under Sources; put anything unconfirmed under Notes, marked as such. The reviewer decides what Dux may say.
+**Drafting from an upstream issue.** The issue is a source, not an authority. Write what a Start9 staffer would tell a customer, not what the reporter claimed; put the URL under Sources; put anything unconfirmed under Notes, marked as such. Write the fix as the service knows it — a version, a setting, a repair — and not the StartOS steps that reach it; Dux takes those from the documentation when it answers. Anything applying the fix needs that neither the service nor StartOS documents — a tool the image lacks, say — is a fact for Notes, not a step to invent. The reviewer decides what Dux may say.
 
 ## The pull request
 
